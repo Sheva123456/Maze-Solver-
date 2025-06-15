@@ -7,15 +7,15 @@ public class Main {
         Maze2dArray maze = new Maze2dArray(20);      // 20x20 maze
         maze.loadDefaultMaze();                        // Load default maze layout
         System.out.println("Warm up 1:");
-        SolverBase solver1 = new Solver2dArrayPriorityQueue(maze); // Uses simple ArrayList-based frontier
-        solver1.solve();                  // Solve and time execution
+        SolverBase solver1 = new Solver2dArrayPriorityQueue(maze); 
+        solver1.solve();                  
         System.out.println("");
 
         // --- Warmup 2 :
         System.out.println("Warm up 2:");
-        Maze2dArray maze2 = new Maze2dArray(20);     // 15x15 maze
+        Maze2dArray maze2 = new Maze2dArray(20);     
         maze2.loadDefaultMaze();
-        SolverBase solver2 = new Solver2dArrayPriorityQueue(maze2); // Uses PriorityQueue for better cost-based node selection
+        SolverBase solver2 = new Solver2dArrayPriorityQueue(maze2); 
         solver2.solve();
         System.out.println("");
 
